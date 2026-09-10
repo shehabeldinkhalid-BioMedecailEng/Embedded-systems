@@ -1,0 +1,52 @@
+# AVR Embedded Drivers — ATmega32
+
+A layered AVR driver stack (UTIL / MCAL / HAL) built for the ATmega32, following
+the standard AUTOSAR-style layering taught in the AMIT Embedded Systems Diploma:
+`UTIL` (generic helpers) → `MCAL` (microcontroller peripherals) → `HAL`
+(external hardware modules) → `APP` (application/main).
+
+## Project Structure
+
+```
+UTIL/
+  std_types.h        Standard fixed-width type aliases
+  bit_math.h          Bit manipulation macros
+MCAL/
+  register_def.h      Direct register address mapping for ATmega32
+  DIO/                 Digital I/O driver
+    dio.h / dio.c
+  ADC/                 Analog-to-Digital Converter driver
+    ADC_int.h / ADC_prog.c
+  EXTI/                External interrupt driver
+    EXTI.h / EXTI.c
+  GIE/                 Global interrupt enable/disable
+    GIE_.h / GIE.c
+HAL/
+  CLCD/                Character LCD driver (4-bit / 8-bit)
+    CLCD_int.h / CLCD_prog.c / CLCD_cofig.h
+  KPAD/                4x4 Keypad driver
+    KPAD.h / KPAD.c / KPAD_cfg.h
+APP/
+  CMAIN.c              FreeRTOS multitasking demo (3 LED tasks)
+  main.c               Bare-metal Timer0 overflow LED blink (reference/legacy)
+```
+
+---
+
+## UTIL Layer
+
+### `std_types.h`
+Defines portable fixed-width type aliases used across every layer:
+`u8/u16/u32/u64` (unsigned), `s8/s16/s32/s64` (signed), `f32/f64` (float).
+
+### `bit_math.h`
+Generic register bit-manipulation macros used everywhere in MCAL/HAL:
+
+| Macro | Effect |
+|---|---|
+| `SET_BIT(reg,bit)` | Sets a bit to 1 |
+| `CLR_BIT(reg,bit)` | Clears a bit to 0 |
+| `TOG_BIT(reg,bit)` | Toggles a bit |
+| `GET_BIT(reg,bit)` | Reads a bit's value |
+
+---
