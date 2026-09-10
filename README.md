@@ -1,5 +1,4 @@
-# Embedded-systems-AVR Tasks
-# Embedded Systems Diploma — Course Outline
+# Embedded Systems Diploma — Course Outline - AVR Tasks
 
 A structured curriculum (164 hours) from AMIT Learning covering embedded
 systems development from fundamentals to industry-standard frameworks.
