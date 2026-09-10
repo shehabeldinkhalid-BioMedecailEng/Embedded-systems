@@ -1,0 +1,26 @@
+## HAL Layer
+
+### CLCD — Character LCD (`CLCD_int.h` / `CLCD_prog.c` / `CLCD_cofig.h`)
+Driver for HD44780-compatible character LCDs, supporting both 4-bit and 8-bit
+modes via `CLCD_cofig.h` (`CLCD_MODE` set to `CLCD_4_BIT` or `CLCD_8_BIT`).
+
+- `CLCD_voidInit` — runs the standard LCD init sequence for the configured mode
+- `CLCD_voidSendCommand` / `CLCD_voidSendData` — low-level command/data write
+- `CLCD_voidSendString` — writes a null-terminated string
+- `CLCD_voidSetCursorPosition(x, y)` — moves the cursor to (column, row)
+- `CLCD_voidClearDisplay` — clears the screen
+- `CLCD_voidSenSpecialChar` — writes a custom character (CGRAM) at a position
+
+Pin mapping (data port, control port, RS/RW/E pins) is configured entirely in
+`CLCD_cofig.h`.
+
+### KPAD — 4x4 Matrix Keypad (`KPAD.h` / `KPAD.c` / `KPAD_cfg.h`)
+Row/column scanning driver for a 4x4 matrix keypad.
+
+- `KPAD_voidInit` — configures rows as pulled-up inputs, columns as outputs
+- `KPAD_u8GetKeyPressed` — scans columns one at a time and returns the pressed
+  key's character (from the `Kpad_mat` layout) or `255` if no key is pressed
+
+Row/column pin assignments live in `KPAD_cfg.h`.
+
+---
