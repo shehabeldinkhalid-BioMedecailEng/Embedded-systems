@@ -32,3 +32,13 @@ Real-life graduation project (e.g., ultrasonic-sensor robot car).
 
 ## Reference
 https://amit-learning.com/ourDiplomas/embeddedsystemsdiploma
+
+<img width="1619" height="983" alt="Screenshot 2026-08-05 215307" src="https://github.com/user-attachments/assets/302b7421-ca62-4aac-9f0b-1606914d6c12" />
+<img width="1280" height="960" alt="WhatsApp Image 2026-09-11 at 1 42 34 AM" src="https://github.com/user-attachments/assets/9a067105-c0f9-4031-89e8-1deccdd67ac1" />
+<img width="720" height="1280" alt="WhatsApp Image 2026-09-11 at 1 42 34 AM (3)" src="https://github.com/user-attachments/assets/82aa5b69-357c-47e5-92ba-5ff925a7cf6d" />
+<img width="828" height="685" alt="WhatsApp Image 2026-09-11 at 1 42 34 AM (2)" src="https://github.com/user-attachments/assets/92e19400-6003-4f7c-a712-60c0695d285d" />
+<img width="1280" height="832" alt="WhatsApp Image 2026-09-11 at 1 42 34 AM (1)" src="https://github.com/user-attachments/assets/2896fe0b-9183-48ce-ab57-b8b46646636f" />
+<img width="777" height="937" alt="WhatsApp Image 2026-09-11 at 1 42 32 AM" src="https://github.com/user-attachments/assets/f1493d17-a399-4a20-9000-d3980d54d118" />
+<img width="332" height="198" alt="WhatsApp Image 2026-09-11 at 1 42 31 AM" src="https://github.com/user-attachments/assets/472fcc77-6679-4038-b2a3-22d98c230268" />
+<img width="608" height="1080" alt="WhatsApp Image 2026-09-11 at 1 42 35 AM (1)" src="https://github.com/user-attachments/assets/7269f579-e4e9-4e71-bd19-73080f07be0b" />
+
